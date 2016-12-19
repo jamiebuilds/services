@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default class Services extends React.Component {
   static async getInitialProps() {
-    let response = await axios.get('http://localhost:4000/services');
+    let response = await axios.get('http://localhost:3000/api/availability');
     return { services: response.data.services };
   }
 
